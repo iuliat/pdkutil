@@ -1,6 +1,0 @@
-# AUTH_URL=u'http://192.168.88.87:5000/v3'
-# USERNAME=u'admin'
-# USER_DOMAIN_NAME=u'Default'
-# PASSWORD=u'Passw0rd'
-# PROJECT_NAME=u'admin'
-# PROJECT_DOMAIN_NAME=u'Default'

@@ -2,14 +2,10 @@
 
 PROJECT = 'pdkutil'
 
-# Change docs/sphinx/conf.py too!
 VERSION = '1.0'
 
 from setuptools import setup, find_packages
 
-# try:
-#     long_description = open('README.rst', 'rt').read()
-# except IOError:
 long_description = ''
 
 setup(
@@ -20,9 +16,6 @@ setup(
     long_description=long_description,
 
     author='Simona Iuliana Toader',
-
-    # url='https://github.com/dreamhost/cliff',
-    # download_url='https://github.com/dreamhost/cliff/tarball/master',
 
     classifiers=['Development Status :: 3 - Alpha',
                  'License :: OSI Approved :: Apache Software License',
