@@ -6,27 +6,23 @@ Stores a pdk file to a barbican container.
 Setup
 -----
 
-First, you need to create a virtual environment and activate it.
+First, you need to create a virtual environment and activate it:
 
-::
+    $ pip install virtualenv
+    $ virtualenv .venv
+    $ . .venv/bin/activate
+    (.venv)$ 
 
-  $ pip install virtualenv
-  $ virtualenv .venv
-  $ . .venv/bin/activate
-  (.venv)$ 
+Next, install PDKUtil:
 
-Next, install PDKUtil.
-
-::
-
-  (.venv)$ python setup.py install
+    (.venv)$ python setup.py install
 
 Command-line interface
 ----------------------
 
 PDKUtil uses Keystone for identity management. Credentials and endpoints can
 be provided via environment variables or command line parameters in the same
-way supported by most OpenStack command line interface (CLI) tools, e.g.::
+way supported by most OpenStack command line interface (CLI) tools, e.g.:
 
     export OS_AUTH_URL=http://example.com:5000/v2.0
     export OS_USERNAME=admin
@@ -40,7 +36,7 @@ Store a pdk file
 This command stores the specified pdk file to a container, returning
 container's reference:
 
-        pdkutil store <filename> <container-name>
+    pdkutil store <filename> <container-name>
 
 Get container's information
 ---------------------------
@@ -48,4 +44,4 @@ Get container's information
 This command retrieves container's information (container's name,
 secrets references, etc) by its specified reference:
 
-	pdkutil get <container-reference>
+    pdkutil get <container-reference>
