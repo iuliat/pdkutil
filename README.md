@@ -3,6 +3,27 @@ PDKUtil
 
 Stores a pdk file to a barbican container.
 
+Setup
+-----
+
+First, you need to create a virtual environment and activate it.
+
+::
+
+  $ pip install virtualenv
+  $ virtualenv .venv
+  $ . .venv/bin/activate
+  (.venv)$ 
+
+Next, install PDKUtil.
+
+::
+
+  (.venv)$ python setup.py install
+
+Command-line interface
+----------------------
+
 PDKUtil uses Keystone for identity management. Credentials and endpoints can
 be provided via environment variables or command line parameters in the same
 way supported by most OpenStack command line interface (CLI) tools, e.g.::
